@@ -64,5 +64,6 @@ The final format of the dataset is illustrated in the following figure:
 ## **Acknowledgements**
 Our codes are based on the following repos:
 * [Wav2lip](https://dl.acm.org/doi/10.1145/3394171.3413532)
+* [SadTalker](https://ieeexplore.ieee.org/document/10204743)
 * [HeadNeRF](https://ieeexplore.ieee.org/document/9880349)
 * [CodeTalker](https://ieeexplore.ieee.org/document/10204746)
