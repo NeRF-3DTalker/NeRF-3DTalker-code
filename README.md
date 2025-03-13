@@ -7,7 +7,7 @@ Official PyTorch implementation for the paper:
 > Xiaoxing Liu, Zhilei Liu,  Chongke Bi
 
 <p align="center">
-<img src="./pic/method_.jpg" width="90%" />
+<img src="./method_.jpg" width="90%" />
 </p>
 
 ## News
