@@ -45,7 +45,7 @@ python Fitting3DMM/FittingNL3DMM.py --img_size 512 \
                                     --img_dir "/dataset/Obama/png"
 ```
 
-3.
+3. For lip-wav images, we utilize [SadTalker](https://ieeexplore.ieee.org/document/10204743) and [Wav2lip](https://dl.acm.org/doi/10.1145/3394171.3413532)
 
 4. Additionally, you need to download [Openface](https://ieeexplore.ieee.org/document/8373812)
 to extract AUs from images.
