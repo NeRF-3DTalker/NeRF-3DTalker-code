@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 1. Download the dataset: https://github.com/yerfor/GeneFace
 
-2. We provide preprocessing code for datasets. You can use /pre_data_code/ to preprocess datasets.
+2. We provide preprocessing code for datasets. You can use /DataProcess/ to preprocess datasets.
 ```bash
 python DataProcess/Gen_HeadMask.py --img_dir "/dataset/Obama/png"
 
@@ -76,6 +76,10 @@ The final format of the dataset is illustrated in the following figure:
 ## **Train Models**
 ```bash
 python train_headnerf.py --batch_size 2 --gpu_id 3 --include_eye_gaze False --eye_gaze_dimension 64 --eye_gaze_scale_factor 1 --print_freq 50 --gaze_D6_rotation False --eye_gaze_disentangle False --comment 'gaze_dim 64,disentanglement True, 10 cam views'
+
+python /StandardizedSpace/main/train_vq.py
+
+python /StandardizedSpace/main/train_au.py
 ```
 
 ## **Acknowledgements**
