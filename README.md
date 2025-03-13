@@ -34,8 +34,20 @@ pip install -r requirements.txt
 1. Download the dataset: https://github.com/yerfor/GeneFace
 
 2. We provide preprocessing code for datasets. You can use /pre_data_code/ to preprocess datasets.
+```bash
+python DataProcess/Gen_HeadMask.py --img_dir "/dataset/Obama/png"
 
-3. Additionally, you need to download [Openface](https://ieeexplore.ieee.org/document/8373812)
+python DataProcess/Gen_Landmark.py --img_dir "/dataset/Obama/png"
+
+python Fitting3DMM/FittingNL3DMM.py --img_size 512 \
+                                    --intermediate_size 256  \
+                                    --batch_size 9 \
+                                    --img_dir "/dataset/Obama/png"
+```
+
+3.
+
+4. Additionally, you need to download [Openface](https://ieeexplore.ieee.org/document/8373812)
 to extract AUs from images.
 The final format of the dataset is illustrated in the following figure:
 
@@ -60,6 +72,11 @@ The final format of the dataset is illustrated in the following figure:
       |——1_nl3dmm.pkl
       |——...
     |——aud.wav
+
+## **Train Models**
+```bash
+python train_headnerf.py --batch_size 2 --gpu_id 3 --include_eye_gaze False --eye_gaze_dimension 64 --eye_gaze_scale_factor 1 --print_freq 50 --gaze_D6_rotation False --eye_gaze_disentangle False --comment 'gaze_dim 64,disentanglement True, 10 cam views'
+```
 
 ## **Acknowledgements**
 Our codes are based on the following repos:
