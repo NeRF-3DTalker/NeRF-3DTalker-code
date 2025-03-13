@@ -31,8 +31,7 @@ pip install -r requirements.txt
 
 ## **Dataset**
 
-1. Download the dataset: [GRID](https://pubs.aip.org/asa/jasa/article-abstract/120/5/2421/934379/An-audio-visual-corpus-for-speech-perception-and)
-和[TCD-TIMIT](https://ieeexplore.ieee.org/abstract/document/7050271)
+1. Download the dataset: https://github.com/yerfor/GeneFace
 
 2. We provide preprocessing code for datasets. You can use /pre_data_code/ to preprocess datasets.
 
