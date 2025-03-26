@@ -46,7 +46,7 @@ python Fitting3DMM/FittingNL3DMM.py --img_size 512 \
 ```
 
 3. Additionally, you need to download [Openface](https://ieeexplore.ieee.org/document/8373812)
-to extract AUs from images.
+to extract AUs from face images.
 
 ## **Train Models**
 ```bash
