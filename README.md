@@ -47,29 +47,6 @@ python Fitting3DMM/FittingNL3DMM.py --img_size 512 \
 
 3. Additionally, you need to download [Openface](https://ieeexplore.ieee.org/document/8373812)
 to extract AUs from images.
-The final format of the dataset is illustrated in the following figure:
-
-./dataset/Obama:
-
-    |——au
-      |——0.csv
-      |——1.csv
-      |——...
-    |——lipwav
-      |——0.jpg
-      |——1.jpg
-      |——...
-    |——png
-      |——0.jpg
-      |——0_lm2d.txt
-      |——0_mask.png
-      |——0_nl3dmm.pkl
-      |——1.jpg
-      |——1_lm2d.txt
-      |——1_mask.png
-      |——1_nl3dmm.pkl
-      |——...
-    |——aud.wav
 
 ## **Train Models**
 ```bash
